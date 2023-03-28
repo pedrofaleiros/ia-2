@@ -1,17 +1,17 @@
 import pandas as pd
 
 # Leitura dos dados do CSV
-data = pd.read_csv("dados_alunos.csv")
+data = pd.read_csv("dados_alunos_materias.csv")
 
 # Pesos para os cursos
 pesos = {
-    "Engenharia": [1.5, 0.8, 1.2, 0.7, 1],
-    "Direito": [0.7, 1.2, 0.7, 1.5, 1.2],
-    "Medicina": [1.2, 0.8, 1.5, 0.7, 1],
-    "TI": [1.5, 0.8, 1.2, 0.7, 1],
-    "Artes": [0.6, 1.2, 0.6, 1, 1.5],
-    "Línguas": [0.6, 1.5, 0.6, 1, 1.2],
-    "Psicologia": [0.8, 1, 0.8, 1.5, 1.2],
+    "Engenharia": [1.5, 1, 1.2, 1.2, 0.7, 0.5, 0.3, 0.5, 1, 0.5, 0.5],
+    "Direito": [0.7, 0.5, 0.7, 0.5, 1.2, 1.5, 1, 1.5, 1.2, 1.5, 1.5],
+    "Medicina": [1.2, 0.8, 1.5, 1.5, 0.7, 0.5, 0.5, 0.5, 1, 1, 1],
+    "TI": [1.5, 1, 1.2, 1.2, 0.8, 1.5, 0.5, 0.5, 1, 0.5, 0.5],
+    "Artes": [0.6, 0.5, 0.6, 0.5, 1.2, 1.5, 1.5, 1.5, 1.5, 1, 1],
+    "Línguas": [0.6, 0.5, 0.6, 0.5, 1.5, 1.5, 1.2, 1.5, 1.2, 1, 1],
+    "Psicologia": [0.8, 0.5, 0.8, 0.5, 1, 1, 1.2, 1.5, 1.2, 1.5, 1.5],
 }
 
 # Função para calcular o fitness
@@ -27,4 +27,4 @@ for curso, curso_pesos in pesos.items():
     resultados[curso] = data.iloc[:, 1:].apply(lambda row: calcular_fitness(row, curso_pesos), axis=1)
 
 # Salvar os resultados em um novo CSV
-resultados.to_csv("fitness_alunos.csv", index=False)
+resultados.to_csv("fitness_alunos.csv", index=False, sep=';')
