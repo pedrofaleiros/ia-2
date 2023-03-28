@@ -18,9 +18,9 @@ def gerar_notas(num_alunos, tipo_aluno):
             if tipo_aluno == 'exatas':
                 nota = np.random.randint(7, 11)  # Nota mínima 7 e máxima 10
             elif tipo_aluno == 'humanas':
-                nota = np.random.randint(5, 11)  # Nota mínima 5 e máxima 10
+                nota = np.random.randint(5, 9)  # Nota mínima 5 e máxima 10
             elif tipo_aluno == 'bom_em_tudo':
-                nota = np.random.randint(8, 11)  # Nota mínima 8 e máxima 10
+                nota = np.random.randint(7, 11)  # Nota mínima 8 e máxima 10
             else:  # tipo_aluno == 'ruim_em_tudo'
                 nota = np.random.randint(5, 8)   # Nota mínima 5 e máxima 7
             soma += nota
