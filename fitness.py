@@ -27,4 +27,4 @@ for curso, curso_pesos in pesos.items():
     resultados[curso] = data.iloc[:, 1:].apply(lambda row: calcular_fitness(row, curso_pesos), axis=1)
 
 # Salvar os resultados em um novo CSV
-resultados.to_csv("fitness_alunos.csv", index=False, sep=';')
+resultados.to_csv("fitness_alunos.csv", index=False, sep=',')
