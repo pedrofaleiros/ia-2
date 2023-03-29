@@ -4,14 +4,15 @@ import pandas as pd
 data = pd.read_csv("dados_alunos_materias.csv")
 
 # Pesos para os cursos
+#1 -Matemática 2- Física 3 - Biologia 4 - Química 5 - Língua Portuguesa 6 - Língua Inglesa 7 - Artes 8 - Filosofia 9 - Redação 10 - História 11 - Geografia
 pesos = {
-    "Engenharia": [1.5, 1.2, 1, 1.2, 0.7, 0.5, 0.3, 0.5, 1, 0.5, 0.5],
-    "Direito": [0.4, 0.1, 0.1, 0.1, 1.5, 1, 0.7, 1.3, 1.5, 1.3, 0.5],
-    "Medicina": [1, 0.8, 1.5, 1.2, 0.7, 0.7, 0.5, 0.5, 1, 1.1, 1.1],
-    "TI": [1.5, 1, 1, 1.2, 0.8, 1, 0.5, 0.5, 1, 0.5, 0.5],
-    "Artes": [0.6, 0.5, 0.6, 0.5, 1.2, 1.5, 1.4, 1.5, 1.5, 1, 1],
-    "Línguas": [0.6, 0.5, 0.6, 0.5, 1.5, 1.5, 1.1, 1.5, 1.2, 1, 1],
-    "Psicologia": [0.7, 0.5, 0.8, 0.5, 1, 1, 1.2, 1.3, 1.2, 1.5, 1.4],
+    "Engenharia": [1.8, 1.8, 0.5, 1.3, 1, 0.7, 1, 0.5, 1, 0.7, 0.7],
+    "Direito": [0.7, 0.7, 0.7, 0.7, 1, 0.7, 0.7, 1, 1, 1, 1],
+    "Medicina":[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "TI": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "Artes": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "Línguas": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "Psicologia": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 }
 
 # Função para calcular o fitness
