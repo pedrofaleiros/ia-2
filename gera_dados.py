@@ -37,7 +37,7 @@ num_alunos_exatas = num_alunos_humanas = num_alunos_restantes // 2
 # Gera notas para cada matéria e tipo de aluno
 notas_matematica = gerar_notas(num_alunos, 'exatas')
 notas_fisica = gerar_notas(num_alunos, 'exatas')
-notas_biologia = gerar_notas(num_alunos, 'humanas')
+notas_biologia = gerar_notas(num_alunos, 'exatas')
 notas_quimica = gerar_notas(num_alunos, 'exatas')
 notas_lingua_portuguesa = gerar_notas(num_alunos, 'humanas')
 notas_lingua_inglesa = gerar_notas(num_alunos, 'humanas')
